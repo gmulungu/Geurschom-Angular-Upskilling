@@ -1,0 +1,93 @@
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+button[mat-raised-button] {
+  margin-top: 16px;
+}
+
+button[mat-raised-button]:not([disabled]) {
+  background-color: #3f51b5;
+  color: #fff;
+  font-weight: bold;
+}
+
+button[mat-raised-button]:disabled {
+  background-color: #ccc;
+  color: #666;
+}
+
+
+mat-accordion {
+  margin: 20px 0;
+}
+
+mat-expansion-panel {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+mat-expansion-panel-header {
+  background-color: #e8f0fe;
+  font-weight: bold;
+}
+
+
+mat-error {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: 4px;
+}
+
+
+div[formArrayName="guests"] {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+}
+
+div[formArrayName="guests"] mat-form-field {
+  margin-bottom: 8px;
+}
+
+div[formArrayName="guests"] button {
+  margin-top: 8px;
+}
+
+
+mat-checkbox {
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  form {
+    padding: 10px;
+  }
+
+  mat-form-field {
+    margin-bottom: 12px;
+  }
+
+  button[mat-raised-button] {
+    width: 100%;
+  }
+}
